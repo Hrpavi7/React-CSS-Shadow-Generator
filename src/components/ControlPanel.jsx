@@ -1,3 +1,6 @@
+// control panel for the "opacity" "color" and other stuff
+// inspired by the css shadow generator https://html-css-js.com/css/generator/box-shadow/
+
 import React from "react";
 
 const ControlPanel = ({
