@@ -47,9 +47,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 font-sans text-gray-800">
       <div className="max-w-7xl mx-auto">
         <Header />
-
         <div className="flex flex-col lg:flex-row gap-8 items-start">
-          {/* Left Column: Controls (Sticky) */}
           <div className="w-full lg:w-1/3 flex flex-col gap-6 lg:sticky lg:top-8 order-2 lg:order-1">
             <ControlPanel 
               shadows={shadows}
@@ -60,8 +58,6 @@ function App() {
               onSelectShadow={setActiveShadowIndex}
             />
           </div>
-
-          {/* Right Column: Preview, Presets, Code */}
           <div className="w-full lg:w-2/3 flex flex-col gap-6 order-1 lg:order-2">
             <PreviewBox shadowCSS={shadowCSS} />
             <PresetGallery onSelectPreset={handleSelectPreset} />
