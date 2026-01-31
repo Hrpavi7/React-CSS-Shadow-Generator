@@ -11,7 +11,7 @@ function App() {
   const [shadows, setShadows] = useState(SHADOW_PRESETS[0].shadows);
   const [activeShadowIndex, setActiveShadowIndex] = useState(0);
 
-  // Derived state calculated during render
+  // derived state calculated during render
   const shadowCSS = useMemo(() => {
     return generateShadowCSS(shadows);
   }, [shadows]);
@@ -70,3 +70,4 @@ function App() {
 }
 
 export default App;
+
